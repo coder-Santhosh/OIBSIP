@@ -1,0 +1,352 @@
+body{
+  background: conic-gradient(from 45deg, #000000, #1a1a1a);
+  color: #fff;
+}
+/* Header Section */
+#home {
+    margin-top: 5rem;
+  }
+  
+  #home h1 {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  #home p {
+    font-size: 1.5rem;
+    color: #555;
+  }
+
+  .ctrr{
+    display: grid;
+    place-items: center;
+  }
+  
+  .title {
+    text-transform: capitalize !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: #3498db;
+    width: 17ch;
+    overflow: hidden;
+    white-space: nowrap;
+    display:block;
+    border-right: 3px solid #f9d566;
+    animation: typewriter 8s steps(7) infinite, blinking-cursor 0.8s infinite;
+    animation-fill-mode: forwards
+  }
+  
+  @keyframes typewriter {
+    0% { width:0 }
+    25% { width: 70% }
+    48% { width: 100% }
+    50% { width: 100% }
+    55% { width: 100% }
+    75% { width: 70%; }
+    85% { width: 30%; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blinking-cursor {
+    from { border-color: transparent }
+    to { border-color: #f9d566 }
+  }
+  
+/* About Me Section */
+#about {
+    margin-top: 5rem;
+    color: #fff !important;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+  }
+  
+  #about .img-fluid {
+    border: 6px solid rgb(0, 98, 163);
+    border-radius: 25px !important;
+    max-width: 100%; 
+    height: 85%;
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  #about p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin: auto;
+  }
+  .abt-us{
+    margin: auto !important;
+    font-size: 1.25rem;
+    color: #555;
+  }
+
+/* Education Section */
+#education {
+    margin-top: 5rem;
+    background: linear-gradient(to right, #3498db, #6dd5fa); /* Gradient background */
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  #education h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+    color: white !important;
+  }
+  
+  .glass-card:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff !important;
+  }
+  
+  .glass-card .card-title {
+    color: #fff;
+  }
+  
+  .glass-card .card-text {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+/* Portfolio Section */
+#portfolio {
+    margin-top: 5rem;
+  }
+  
+  #portfolio h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+  }
+  
+  .portfolio-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .portfolio-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-card .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .portfolio-card .card-body {
+    padding: 1.5rem;
+  }
+  
+  .portfolio-card .card-title {
+    font-size: 1.5rem;
+    color: #b8afaf;
+    margin-bottom: 0.5rem;
+  }
+  
+  .portfolio-card .card-text {
+    font-size: 1rem;
+    color:#d3b4b4;
+  }
+  
+  .portfolio-card .btn-primary {
+    background-color: #3498db;
+    border: none;
+  }
+  
+/* Skills Section */
+#skills {
+    margin-top: 5rem;
+  }
+  
+  #skills h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+  }
+  
+  .skill-category {
+    margin-bottom: 2rem;
+  }
+  
+  .skill-category h4 {
+    font-size: 1.8rem;
+    color: #b8afaf;
+  }
+  
+  .skill-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-item {
+    margin-bottom: 1rem;
+  }
+  
+  .progress {
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+ 
+  /* Set different colors for each skill level */
+  .progress-bar-primary {
+    background-color: #3498db;
+  }
+  
+  .progress-bar-success {
+    background-color: #2ecc71;
+  }
+  
+  .progress-bar-info {
+    background-color: #5bc0de;
+  }
+
+/* Contact Form Styling */
+.contact-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+.glass-card:hover label{
+  color: white !important;
+}
+
+.glass-card:hover ::placeholder{
+  color: #000000;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+}
+
+#contact h1{
+    color: #2980b9;
+}
+
+/* Footer Styling */
+.footer{
+    background-color: #008080 !important;
+    /* color: #fff; */
+    color: #fff !important;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+/* -------------------------------- */
+  /* Custom CSS for the Skills section */
+  .skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card {
+  margin: 15px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* border: 1px solid #dee2e6; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-card .card-body {
+  padding: 20px;
+}
+
+.skill-card h5 {
+  color: #007bff;
+}
+
+.progress {
+  height: 15px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background-color: #007bff;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .skll{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+} */
+
+/* Custom animation for progress bars */
+@keyframes animateProgress {
+  from {
+    width: 0;
+  }
+}
+
+.progress-bar-striped.progress-bar-animated {
+  animation: animateProgress 1.5s ease-out;
+}
