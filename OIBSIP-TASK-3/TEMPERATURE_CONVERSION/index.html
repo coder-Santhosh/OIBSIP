@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>    
+</head>
+<body>
+
+<!-- Image and text -->
+<nav class="navbar ">
+    <a class="navbar-brand" style="font-size: large; color: rgb(255, 255, 255); font-weight: bold; font-family: 'Times New Roman', Times, serif;">
+        <img src="my_logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+         SK_CREATIONS
+    </a>
+</nav>
+
+
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Summer.jpg" class="d-block w-100" alt="Summer Season">
+      </div>
+      <div class="carousel-item">
+        <img src="Autumn.jpg" class="d-block w-100" alt="Autumn">
+      </div>
+      <div class="carousel-item">
+        <img src="Winter.jpg" class="d-block w-100" alt="Winter">
+      </div>
+    </div>
+</div> -->
+
+<div class="container converter-container">
+    <h2 class="text-center mb-4">Temperature Converter</h2>
+    <form id="temperatureForm">
+        <div class="form-group">
+            <label for="temperature">Temperature:</label>
+            <input type="number" class="form-control" id="temperature" placeholder="Enter temperature" required>
+        </div>
+        <div class="form-group">
+            <label for="fromUnit">From Unit:</label>
+            <select class="form-control" id="fromUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="toUnit">To Unit:</label>
+            <select class="form-control" id="toUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" onclick="convertTemperature()">Convert</button>
+    </form>
+    <div class="result-container mt-4" id="resultContainer">
+        <h5>Result:</h5>
+        <p id="result" class="font-weight-bold"></p>
+    </div>
+    <div class="error-message mt-4" id="errorMessageContainer" style="display: none;">
+        <h4>Error:</h4>
+        <p id="errorMessage"></p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    &copy; 2023 SK_CREATIONS. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
